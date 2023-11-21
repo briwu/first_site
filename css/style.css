@@ -1,0 +1,231 @@
+body{
+    background-color: #d9e4ff;
+    color: black;
+}
+
+h2{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Comic Sans MS';
+    color: black;
+}
+
+h3{
+    font-size: x-large;
+    font-family: 'Comic Sans MS';
+    color: black;
+}
+
+nav {
+    text-align: center;
+}
+
+p{
+    line-height: 2;
+}
+
+ul {
+    line-height: 2;
+}
+
+ol {
+    line-height: 2;
+}
+
+img, video{
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.grid-travel img {
+    height: 125px;
+}
+
+.grid-pets img, .grid-pets video {
+    height: 200px;
+    width: 170px;
+}
+
+figure {
+    text-align: center;
+    padding: 10px;
+}
+
+#main {
+    text-align: center;
+}
+
+#skip{
+    text-transform: uppercase;
+}
+
+#skip{
+    position: absolute;
+    left: -500px;
+}
+
+#skip:focus{
+    left: 10px;
+}
+
+
+nav a.active {
+    font-size: large;
+    font-weight: bold;
+    background-color:aquamarine;
+}
+
+nav li{
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@keyframes enlarge {
+    from {transform: scale(1.0);}
+    to {transform: scale(1.1);}
+}
+
+img:hover, video:hover {
+    transform: scale(1.1);
+    animation: enlarge 1s;
+}
+
+img:focus, video:focus {
+    transform: scale(1.1);
+    animation: enlarge 1s;
+}
+
+.grid-travel, .grid-pets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.last-element {
+    justify-self: center;
+    grid-column: span 2;
+}
+
+.skip-links {
+    display: none;
+}
+
+.fotorama, .pet-container-1, .pet-container-2, .food-container {
+    display: none;
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+    img, video, video:hover, img:hover {
+        animation: none;
+        transform: none;
+    }
+
+    .gif {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: aquamarine;
+    }
+
+    .intro-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .intro-grid p {
+        grid-column: auto;
+    }
+
+    .intro-grid h3 {
+        grid-column: span 2;
+    }
+
+    .intro-grid img {
+        grid-column: auto;
+        height: 250px;
+    }
+
+    .intro-grid h2{
+        grid-column: span 2;
+    }
+
+    .travel-links {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .travel-links li{
+        text-decoration: underline;
+    }
+
+    .skip-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skip-links li{
+        text-decoration: underline;
+    }
+
+    #last-pet {
+        grid-column: span 3;
+    }
+
+    .fotorama, .pet-container-1, .pet-container-2, .food-container {
+        display: inline-block;
+    }
+
+    .fotorama img {
+        height: 250px;
+        width: 350px;
+    }
+
+    .pet-container-1 img, .pet-container-1 video{
+        height: 400px;
+        width: 300px;
+    }
+
+    .pet-container-2 img {
+        height: 350px;
+        width: 400px;
+    }
+
+    .food-container img {
+        height: 350px;
+        width: 450px;
+    }
+
+    .grid-travel, .grid-pets, .food-images {
+        display: none;
+    }
+
+
+    @keyframes enlarge {
+        from {
+            transform: scale(1.0);
+        }
+
+        to {
+            transform: scale(1.3);
+        }
+    }
+
+    img:hover, video:hover {
+        transform: scale(1.3);
+        animation: enlarge 1s;
+    }
+
+    img:focus, video:focus {
+        transform: scale(1.3);
+        animation: enlarge 1s;
+    }
+}
+
