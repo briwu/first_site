@@ -137,10 +137,6 @@ img:focus, video:focus {
     mix-blend-mode: screen;
 }
 
-.lvml {
-    behavior: initial !important;
-}
-
 @media (prefers-reduced-motion: reduce) {
     img, video, video:hover, img:hover {
         animation: none;
