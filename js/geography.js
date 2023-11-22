@@ -1,9 +1,3 @@
-var lvmlElements = document.querySelectorAll(".lvml");
-
-lvmlElements.forEach(function (element) {
-    element.style.removeProperty("behavior");
-});
-
 var map1 = L.map("map1").setView([36.486, -118.565], 10);
 
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -51,3 +45,9 @@ L.marker([1.29027, 103.851959])
     .addTo(map4)
     .bindPopup("Map of Singapore.<br> Feel free to drag around!")
     .openPopup();
+
+var lvmlElements = document.querySelectorAll(".lvml");
+
+lvmlElements.forEach(function (element) {
+    element.style.removeProperty("behavior");
+});
