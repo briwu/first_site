@@ -129,6 +129,14 @@ img:focus, video:focus {
     border-radius: 0;
 }
 
+.leaflet-popup-close-button span {
+    color: black;
+}
+
+.leaflet-container img.leaflet-tile {
+    mix-blend-mode: normal;
+}
+
 
 @media (prefers-reduced-motion: reduce) {
     img, video, video:hover, img:hover {
