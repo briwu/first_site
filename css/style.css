@@ -133,8 +133,8 @@ img:focus, video:focus {
     color: black;
 }
 
-.leaflet-container img.leaflet-tile {
-    mix-blend-mode: normal;
+#map1 .leaflet-container img.leaflet-tile, #map2 .leaflet-container img.leaflet-tile, #map3 .leaflet-container img.leaflet-tile, #map4 .leaflet-container img{
+    mix-blend-mode: screen;
 }
 
 .lvml {
