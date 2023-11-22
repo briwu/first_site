@@ -1,3 +1,9 @@
+var lvmlElements = document.querySelectorAll(".lvml");
+
+lvmlElements.forEach(function (element) {
+    element.style.removeProperty("behavior");
+});
+
 var map1 = L.map("map1").setView([36.486, -118.565], 10);
 
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
